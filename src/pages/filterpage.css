@@ -1,0 +1,77 @@
+.topnav {
+  background-color: #d53c16;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav a.active {
+  background-color: #d53c16;
+  color: white;
+}
+
+.heading{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(17, 17, 95);
+  margin: auto;
+}
+
+.card {
+  display:flex;
+  flex-direction: row;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 700px;
+  height: 150px;
+  padding: 10px;
+  margin:30px;
+  
+}
+
+
+.img {
+  border-radius: 5px 5px 0 0;
+  padding-left: 20px;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.filter{
+  display:flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 260px;
+  height: 550px;
+  padding: 10px;
+  margin: 10px;
+  margin-left:1%;
+  
+}

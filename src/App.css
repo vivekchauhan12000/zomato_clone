@@ -1,0 +1,39 @@
+
+.background_image{
+  background-image:url(/src/pages/background.png) ;
+  width: 100%;
+  height: 400px;
+  
+  object-fit: contain;
+ 
+  
+}
+.Ellipse-1 {
+  width: 140px;
+  height: 140px;
+ border-radius:140px;
+
+background-color:white;
+display: block;
+margin-left: auto;
+margin-right: auto;
+padding:40px;
+margin-top: 51px;
+text-align: center;
+color: red;
+font-weight: 900;
+}
+
+.col9{
+  margin-left: auto;
+margin-right: auto;
+padding:40px;
+color: seashell;
+}
+
+.cardArrangment{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+

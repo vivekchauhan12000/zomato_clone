@@ -1,0 +1,72 @@
+
+    <div>
+      <>
+       <Header/>
+       
+  <h1 className="heading">Breakfast places in Mumbai</h1>
+  <input type="text" className="form-control" aria-label="Text input with dropdown button" placeholder="🔍Search for restaurant" onChange={(event)=>{SetSearchTerm(event.target.value)}}/>
+ 
+  <div className="main">
+    <div className="column">
+      <div className="filter">
+        <div className="container">
+          <h4><b>Filter location</b></h4>
+          <p> Select Location</p>
+          <input list="browsers" name="myBrowser" />
+          <datalist id="browsers">
+            <option value="Mumbai">
+            </option><option value="Jaipur">
+            </option><option value="Lucknow">
+            </option><option value="Pune">
+            </option></datalist>
+          <h4>Cusine</h4>
+          <input type="checkbox" id="North Indian" name="North Indian" defaultValue="North Indian" />
+          <label htmlFor="vehicle1"> North Indian</label><br />
+          <input type="checkbox" id="South Indian" name="South Indian" defaultValue="South Indian" />
+          <label htmlFor="vehicle2"> South Indian</label><br />
+          <input type="checkbox" id="Street food" name="Street food" defaultValue="Street food" />
+          <label htmlFor="vehicle3"> Street food</label><br />
+          <h4>Range</h4>
+          <input type="radio" id="North Indian" name="Range" defaultValue="North Indian" />
+          <label htmlFor="radio"> 0-200</label><br />
+          <input type="radio" id="South Indian" name="Range" defaultValue="South Indian" />
+          <label htmlFor="radio">200-800</label><br />
+          <input type="radio" id="Street food" name="Range" defaultValue="Street food" />
+          <label htmlFor="radio">800-2000</label><br />
+          <input type="radio" id="Street food" name="Range" defaultValue="Street food" />
+          <label htmlFor="radio">2000+</label><br />
+          <h4>Sort</h4>
+          <input type="radio" id="North Indian" name="Range" defaultValue="North Indian" />
+          <label htmlFor="radio">Price low to high</label><br />
+          <input type="radio" id="South Indian" name="Range" defaultValue="South Indian" />
+          <label htmlFor="radio">Price high to low</label><br />
+        </div>
+      </div>
+    </div>
+    <div className="row">
+      
+    {data.filter((val)=>{
+  if(SearchTerm==""){
+    
+    return val}else if (val.name.toLowerCase().includes(SearchTerm.toLowerCase())){
+    
+      return val
+    }
+ }).map( val=>(
+   <FilterCard  id={val._id} name={val.name} location={val.location} food={val.food} img={val.img}>
+     
+     </FilterCard>
+
+    ))}<div className="row">
+       
+       </div>
+       
+    </div>
+  </div>
+</>
+
+    </div>
+  )
+}
+
+export default Filterpage
