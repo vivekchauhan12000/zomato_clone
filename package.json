@@ -1,8 +1,9 @@
 {
   "name": "client",
+  "homepage": "https://vivekchauhan12000.github.io/fooddelivery_example",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://vivekchauhan12000.github.io/fooddelivery_example",
+  
   "dependencies": {
     "@auth0/auth0-react": "^1.2.0",
     "@stripe/stripe-js": "^1.11.0",
